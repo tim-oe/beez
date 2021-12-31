@@ -29,3 +29,20 @@
 <p align="center">
   <img src="imgs/double-feeder.jpg" width="350" alt="Double feeder">
 </p>
+
+# winter prep
+
+## winter stands with solid bottom
+<p align="center">
+  <img src="imgs/winter-stand.jpg" width="350" alt="Winter Stand">
+</p>
+
+## mouse guard
+<p align="center">
+  <img src="imgs/mouse-guard.jpg" width="350" alt="Mouse Guard">
+</p>
+
+## bee chalet
+<p align="center">
+  <img src="imgs/bee-chalet.jpg" width="350" alt="Bee Chalet">
+</p>
