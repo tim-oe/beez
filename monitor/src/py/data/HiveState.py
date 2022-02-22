@@ -3,11 +3,11 @@
 #
 # The MIT License (MIT)
 #
-'''
-'''
+"""
+"""
 
 __all__ = ["HiveState"]
 
+
 class HiveState(object):
-    '''
-    '''
+    """ """

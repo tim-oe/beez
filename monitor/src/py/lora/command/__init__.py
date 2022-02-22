@@ -8,5 +8,14 @@ from .Message import Message
 from .Mode import Mode
 from .Version import Version
 
-__all__ = ["BaseCommand", "Channel", "DataRate", "Id",
-           "Join", "Key", "Message", "Mode", "Version"]
+__all__ = [
+    "BaseCommand",
+    "Channel",
+    "DataRate",
+    "Id",
+    "Join",
+    "Key",
+    "Message",
+    "Mode",
+    "Version",
+]

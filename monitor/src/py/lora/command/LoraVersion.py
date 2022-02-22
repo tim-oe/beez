@@ -8,19 +8,19 @@
 
 from BaseCommand import BaseCommand
 
-__all__ = ["Version"]
+__all__ = ["LoraVersion"]
 
 
-class Version(BaseCommand):
+class LoraVersion(BaseCommand):
     """
-    Firmware version command
+    LORA Version command
     """
 
-    COMMAND_VERSiON = "VER"
+    COMMAND_VERSION = BaseCommand.LORA_PREFIX + "VER"
 
     def __init__(self):
         """
         Ctor
         :param self: this
         """
-        super.__init__(self.COMMAND_VERSiON)
+        super.__init__(self.COMMAND_VERSION)

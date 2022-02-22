@@ -8,19 +8,19 @@
 
 from BaseCommand import BaseCommand
 
-__all__ = ["Version"]
+__all__ = ["Temperature"]
 
 
-class Version(BaseCommand):
+class Temperature(BaseCommand):
     """
-    Firmware version command
+    modem temp command
     """
 
-    COMMAND_VERSiON = "VER"
+    COMMAND_TEMP = "TEMP"
 
     def __init__(self):
         """
         Ctor
         :param self: this
         """
-        super.__init__(self.COMMAND_VERSiON)
+        super.__init__(self.COMMAND_TEMP)

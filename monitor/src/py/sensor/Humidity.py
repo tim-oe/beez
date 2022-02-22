@@ -3,12 +3,12 @@
 #
 # The MIT License (MIT)
 #
-'''
-'''
+"""
+"""
 from Temprature import Temprature
 
 __all__ = ["Humitity"]
 
+
 class Humitity(Temprature):
-    '''
-    '''
+    """ """
