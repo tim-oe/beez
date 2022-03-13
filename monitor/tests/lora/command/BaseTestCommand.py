@@ -11,6 +11,7 @@ import unittest
 from lora.command.BaseCommand import BaseCommand
 from lora.Modem import Modem
 
+
 class BaseTestCommand(unittest.TestCase):
     # can't use __init__
     # https://techoverflow.net/2020/04/21/how-to-fix-python-unittest-__init__-takes-1-positional-argument-but-2-were-given/
@@ -19,11 +20,8 @@ class BaseTestCommand(unittest.TestCase):
 
     def tearDown(self):
         self.modem.close()
-        
+
     def validate(self, cmd: BaseCommand, pattern: str):
         resp: str = self.modem.send(cmd)
-        
-        self.assertRegex(resp.strip(), pattern)
 
-        
-        
+        self.assertRegex(resp.strip(), pattern)

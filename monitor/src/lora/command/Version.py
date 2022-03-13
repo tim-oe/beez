@@ -8,6 +8,7 @@
 
 from lora.command.BaseCommand import BaseCommand
 
+
 class Version(BaseCommand):
     """
     Firmware version command

@@ -12,7 +12,7 @@ def send(sio, ser, cmd):
     ser.flush()
     time.sleep(0.2)
 
-    buff = ''
+    buff = ""
 
     while ser.inWaiting() > 0:
         buff += ser.read(1).decode()
