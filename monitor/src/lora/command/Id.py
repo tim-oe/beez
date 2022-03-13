@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["Id"]
 
@@ -26,7 +26,7 @@ class Id(BaseCommand):
         Ctor read all id fields
         :param self: this
         """
-        super.__init__(self.COMMAND_ID)
+        super().__init__(self.COMMAND_ID)
 
     def __init__(self, id):
         """
@@ -34,7 +34,7 @@ class Id(BaseCommand):
         :param self: this
         :param id: the id field name
         """
-        super.__init__(self.COMMAND_ID + BaseCommand.COMMAND_EQUALS + id)
+        super().__init__(self.COMMAND_ID + BaseCommand.COMMAND_EQUALS + id)
 
     def __init__(self, id, value):
         """
@@ -43,7 +43,7 @@ class Id(BaseCommand):
         :param id: the id field name
         :param value: the value to set
         """
-        super.__init__(
+        super().__init__(
             self.COMMAND_ID
             + BaseCommand.COMMAND_EQUALS
             + id

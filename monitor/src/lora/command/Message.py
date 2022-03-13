@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["Message"]
 
@@ -24,7 +24,7 @@ class Message(BaseCommand):
         :param self: this
         :param msg: the message
         """
-        super.__init__(
+        super().__init__(
             self.COMMAND_MESSAGE
             + BaseCommand.COMMAND_EQUALS
             + BaseCommand.COMMAND_QUOTE

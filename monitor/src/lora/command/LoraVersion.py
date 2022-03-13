@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["LoraVersion"]
 
@@ -23,4 +23,4 @@ class LoraVersion(BaseCommand):
         Ctor
         :param self: this
         """
-        super.__init__(self.COMMAND_VERSION)
+        super().__init__(self.COMMAND_VERSION)

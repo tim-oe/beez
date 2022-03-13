@@ -6,21 +6,18 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
-__all__ = ["Temperature"]
-
-
-class Temperature(BaseCommand):
+class Version(BaseCommand):
     """
-    modem temp command
+    Firmware version command
     """
 
-    COMMAND_TEMP = "TEMP"
+    COMMAND_VERSiON = "VER"
 
     def __init__(self):
         """
         Ctor
         :param self: this
         """
-        super.__init__(self.COMMAND_TEMP)
+        super().__init__(self.COMMAND_VERSiON)

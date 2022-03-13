@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["Channel"]
 
@@ -25,7 +25,7 @@ class Channel(BaseCommand):
         Ctor read channels
         :param self: this
         """
-        super.__init__(self.COMMAND_CHANNEL)
+        super().__init__(self.COMMAND_CHANNEL)
 
     def __init__(self, channel, enable=True):
         """
@@ -34,7 +34,7 @@ class Channel(BaseCommand):
         :param channel: the channel to set
         :param enable: whether to enable, true, or disable false
         """
-        super.__init__(
+        super().__init__(
             self.COMMAND_CHANNEL
             + BaseCommand.COMMAND_EQUALS
             + channel

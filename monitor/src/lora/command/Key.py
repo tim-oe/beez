@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["Key"]
 
@@ -28,7 +28,7 @@ class Key(BaseCommand):
         :param key: the key field name
         :param value: the value to set
         """
-        super.__init__(
+        super().__init__(
             self.COMMAND_KEY
             + BaseCommand.COMMAND_EQUALS
             + id

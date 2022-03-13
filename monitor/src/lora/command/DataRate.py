@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["DataRate"]
 
@@ -26,7 +26,7 @@ class DataRate(BaseCommand):
         Ctor read band
         :param self: this
         """
-        super.__init__(
+        super().__init__(
             self.COMMAND_DATA_RATE + BaseCommand.COMMAND_EQUALS + self.DATA_RATE_SCHEME
         )
 
@@ -36,4 +36,4 @@ class DataRate(BaseCommand):
         :param self: this
         :param band: the band plan name
         """
-        super.__init__(self.COMMAND_DATA_RATE + BaseCommand.COMMAND_EQUALS + band)
+        super().__init__(self.COMMAND_DATA_RATE + BaseCommand.COMMAND_EQUALS + band)

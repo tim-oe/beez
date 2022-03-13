@@ -6,7 +6,7 @@
 """
 """
 
-from BaseCommand import BaseCommand
+from lora.command.BaseCommand import BaseCommand
 
 __all__ = ["Mode"]
 
@@ -27,7 +27,7 @@ class Mode(BaseCommand):
         :param self: this
         :param mode: the work mode
         """
-        super.__init__(self.COMMAND_MODE + BaseCommand.COMMAND_EQUALS + mode)
+        super().__init__(self.COMMAND_MODE + BaseCommand.COMMAND_EQUALS + mode)
 
     @staticmethod
     def otaa():
