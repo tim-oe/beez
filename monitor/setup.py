@@ -22,7 +22,7 @@ class CleanCommand(Command):
 
 
 # https://www.tutorialguruji.com/python/python-package-structure-setup-py-for-running-unit-tests/
-# run tests 
+# run tests
 # via this script
 # for single test class
 # p3 setup tests -s <fully qualified test module>

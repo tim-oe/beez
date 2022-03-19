@@ -6,6 +6,7 @@
 """
 """
 
+# https://stackoverflow.com/questions/44834/can-someone-explain-all-in-python
 __all__ = ["BaseCommand"]
 
 
@@ -16,7 +17,7 @@ class BaseCommand(object):
     """
 
     COMMAND_PREFIX = "AT+"
-    LORA_PREFIX = "LW="
+    LORA_PREFIX = "LW"
     COMMAND_EQUALS = "="
     COMMAND_QUOTE = '"'
     COMMAND_COMMA = ","

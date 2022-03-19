@@ -21,31 +21,33 @@ class Mode(BaseCommand):
     MODE_OTAA = "LWOTAA"
     MODE_ABP = "LWABP"
 
-    def __init__(self, mode):
+    def __init__(self, mode=""):
         """
         Ctor
         :param self: this
         :param mode: the work mode
         """
-        super().__init__(self.COMMAND_MODE + BaseCommand.COMMAND_EQUALS + mode)
+        super().__init__(
+            self.COMMAND_MODE + (BaseCommand.COMMAND_EQUALS + mode, "")[mode == ""]
+        )
 
-    @staticmethod
-    def otaa():
+    @classmethod
+    def otaa(cls):
         """
         :return: create otaa mode command
         """
-        return Mode(Mode.MODE_OTAA)
+        return cls(Mode.MODE_OTAA)
 
-    @staticmethod
-    def abp():
+    @classmethod
+    def abp(cls):
         """
         :return: create abp mode command
         """
-        return Mode(Mode.MODE_ABP)
+        return cls(Mode.MODE_ABP)
 
-    @staticmethod
-    def test():
+    @classmethod
+    def test(cls):
         """
         :return: create test mode command
         """
-        return Mode(Mode.MODE_TEST)
+        return cls(Mode.MODE_TEST)

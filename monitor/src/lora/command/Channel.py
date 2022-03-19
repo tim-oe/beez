@@ -20,24 +20,24 @@ class Channel(BaseCommand):
     CHANNEL_ENABLE = "ON"
     CHANNEL_DISABLE = "OFF"
 
-    def __init__(self):
-        """
-        Ctor read channels
-        :param self: this
-        """
-        super().__init__(self.COMMAND_CHANNEL)
-
-    def __init__(self, channel, enable=True):
+    def __init__(self, channel=-1, enable=True):
         """
         Ctor set channel
         :param self: this
         :param channel: the channel to set
         :param enable: whether to enable, true, or disable false
         """
-        super().__init__(
-            self.COMMAND_CHANNEL
-            + BaseCommand.COMMAND_EQUALS
-            + channel
-            + BaseCommand.COMMAND_COMMA
-            + (self.CHANNEL_ENABLE, self.CHANNEL_DISABLE)[enable]
-        )
+
+        _cmd: str
+        if channel >= 0:
+            _cmd = (
+                self.COMMAND_CHANNEL
+                + BaseCommand.COMMAND_EQUALS
+                + str(channel)
+                + BaseCommand.COMMAND_COMMA
+                + (self.CHANNEL_DISABLE, self.CHANNEL_ENABLE)[enable]
+            )
+        else:
+            _cmd = self.COMMAND_CHANNEL
+
+        super().__init__(_cmd)
