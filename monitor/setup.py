@@ -17,8 +17,29 @@ class CleanCommand(Command):
         pass
 
     def run(self):
-        os.system("py3clean .")
+        os.system("py3clean -v .")
+        os.system("rm -vrf ./.coverage")
         os.system("rm -vrf ./*.egg-info")
+
+class CoverageCommand(Command):
+    """
+    coverage command
+    https://coverage.readthedocs.io/en/6.3.2/#
+    https://github.com/IBM/IBMDeveloper-recipes/blob/main/testing-and-code-coverage-with-python/index.md
+    https://stackoverflow.com/questions/66914359/exclude-imports-from-coverage-in-python
+    """
+
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+    def run(self):
+        os.system("coverage run setup.py test")
+        os.system("coverage report")
 
 
 # https://www.tutorialguruji.com/python/python-package-structure-setup-py-for-running-unit-tests/
@@ -36,5 +57,6 @@ setup(
     test_suite="tests",
     cmdclass={
         "clean": CleanCommand,
+        "cover": CoverageCommand
     },
 )

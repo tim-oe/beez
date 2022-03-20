@@ -5,12 +5,15 @@
 #
 """
 """
-from Temprature import Temprature
-
-__all__ = ["Humitity"]
 
 
-class Humitity(Temprature):
+__all__ = ["Humidity"]
+
+
+from sensor.Temprature import Temprature
+
+
+class Humidity(Temprature):
     """
     humidity sensor class
     see https://shop.switchdoc.com/collections/grove/products/sht30-i2c-waterproof-temperature-and-humidity-sensor-with-grove
@@ -22,7 +25,7 @@ class Humitity(Temprature):
         :param self: this
         :param gpioPin: the gpio pin (ic2)
         """
-        super(gpioPin)
+        super().__init__(gpioPin)
 
     def read(self):
         """

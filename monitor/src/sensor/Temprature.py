@@ -9,7 +9,7 @@
 __all__ = ["Temprature"]
 
 
-from py.lib import SHT30
+from lib import SHT30
 
 
 class Temprature(object):

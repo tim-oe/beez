@@ -17,6 +17,7 @@ class Channel(BaseCommand):
     """
 
     COMMAND_CHANNEL = "CH"
+    CHANNEL_NUM = "NUM"
     CHANNEL_ENABLE = "ON"
     CHANNEL_DISABLE = "OFF"
 
@@ -38,6 +39,6 @@ class Channel(BaseCommand):
                 + (self.CHANNEL_DISABLE, self.CHANNEL_ENABLE)[enable]
             )
         else:
-            _cmd = self.COMMAND_CHANNEL
+            _cmd = self.COMMAND_CHANNEL + BaseCommand.COMMAND_EQUALS + self.CHANNEL_NUM
 
         super().__init__(_cmd)

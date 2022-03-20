@@ -6,13 +6,22 @@
 """
 """
 
+from src.lora.command.BaseCommand import BaseCommand
 from src.lora.command.Channel import Channel
 from tests.lora.command.BaseTestCommand import BaseTestCommand
 
 
 class TestChannel(BaseTestCommand):
     def testRead(self):
-        self.validate(cmd=Channel(), pattern="\+" + Channel.COMMAND_CHANNEL + ": \d+;")
+        self.validate(
+            cmd=Channel(),
+            pattern="\+"
+            + Channel.COMMAND_CHANNEL
+            + ": "
+            + Channel.CHANNEL_NUM
+            + BaseCommand.COMMAND_COMMA
+            + " [\d-]+",
+        )
 
     def testEnable(self):
         channel: int = 1
@@ -26,7 +35,6 @@ class TestChannel(BaseTestCommand):
             + " "
             + Channel.CHANNEL_ENABLE,
         )
-
 
     def testDisable(self):
         channel: int = 1

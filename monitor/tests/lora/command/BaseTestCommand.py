@@ -23,10 +23,10 @@ class BaseTestCommand(unittest.TestCase):
 
     def validate(self, cmd: BaseCommand, pattern: str):
 
-        print( "\n>>> " + cmd.cmd)
+        print("\n>>> " + cmd.cmd)
 
         resp: str = self.modem.send(cmd)
 
-        print( "<<< " + resp.strip())
+        print("<<< " + resp.strip())
 
         self.assertRegex(resp.strip(), pattern)

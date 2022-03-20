@@ -29,23 +29,10 @@ sio = io.TextIOWrapper(io.BufferedRWPair(ser, ser))
 # print(ser.BAUDRATES)
 # see https://files.seeedstudio.com/products/317990687/res/LoRa-E5%20module%20datasheet_V1.0.pdf
 send(sio, ser, "AT+ID\n")
-send(sio, ser, "AT+VER\n")
-send(sio, ser, "AT+LW=VER\n")
-send(sio, ser, "AT+TEMP\n")
 # send(sio, ser, "AT+LW=LEN\n")
 send(sio, ser, "AT+POWER\n")
 send(sio, ser, "AT+PORT=?\n")
 send(sio, ser, "AT+ADR=?\n")
-# set to us freg
-send(sio, ser, "AT+DR\n")
-send(sio, ser, "AT+DR=US915\n")
-send(sio, ser, "AT+DR=SCHEME\n")
-# enable channels
-# for x in range(72):
-#    send(sio, ser, "AT+CH=%d,OFF\n" % x)
-send(sio, ser, "AT+CH=NUM, 8-15\n")
-for x in range(8, 16):
-    send(sio, ser, "AT+CH=%d\n" % x)
 send(sio, ser, "AT+CH=NUM\n")
 # set class, doesn't seem to take
 send(sio, ser, "AT+CLASS=B,SAVE\n")
@@ -58,10 +45,6 @@ send(sio, ser, "AT+CLASS\n")
 # time.sleep(0.5)
 # send(sio, ser, 'AT+KEY=APPKEY, "c2 11 ae 38 53 3a dc 50 e7 82 c4 2e 14 c4 d4 88"\n')
 # time.sleep(0.5)
-#
-# set join mode
-send(sio, ser, "AT+MODE=LWOTAA\n")
-send(sio, ser, "AT+MODE\n")
 
 # baud rate
 send(sio, ser, "AT+UART=BR\n")
