@@ -38,23 +38,23 @@ class Key(BaseCommand):
             + BaseCommand.COMMAND_QUOTE
         )
 
-    @staticmethod
-    def networkSession(value):
+    @classmethod
+    def networkSession(cls, value):
         """
         :return: create network session key command
         """
-        return Key(Key.KEY_NETWORK_SESSION, value)
+        return cls(cls.KEY_NETWORK_SESSION, value)
 
-    @staticmethod
-    def appSession(value):
+    @classmethod
+    def appSession(cls, value):
         """
         :return: create application session key command
         """
-        return Key(Key.KEY_APP_SESSION, value)
+        return cls(cls.KEY_APP_SESSION, value)
 
-    @staticmethod
-    def app(value):
+    @classmethod
+    def app(cls, value):
         """
         :return: create application key command
         """
-        return Key(Key.KEY_APP, value)
+        return cls(cls.KEY_APP, value)

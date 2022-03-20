@@ -36,18 +36,18 @@ class Mode(BaseCommand):
         """
         :return: create otaa mode command
         """
-        return cls(Mode.MODE_OTAA)
+        return cls(cls.MODE_OTAA)
 
     @classmethod
     def abp(cls):
         """
         :return: create abp mode command
         """
-        return cls(Mode.MODE_ABP)
+        return cls(cls.MODE_ABP)
 
     @classmethod
     def test(cls):
         """
         :return: create test mode command
         """
-        return cls(Mode.MODE_TEST)
+        return cls(cls.MODE_TEST)

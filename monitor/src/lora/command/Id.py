@@ -47,18 +47,18 @@ class Id(BaseCommand):
         """
         :return: create devAddr id command
         """
-        return cls(Id.ID_DEV_ADDR, value)
+        return cls(cls.ID_DEV_ADDR, value)
 
     @classmethod
     def devEui(cls, value):
         """
         :return: create devEui id command
         """
-        return cls(Id.ID_DEV_EUI, value)
+        return cls(cls.ID_DEV_EUI, value)
 
     @classmethod
     def appEui(cls, value):
         """
         :return: create appEui id command
         """
-        return cls(Id.ID_APP_EUI, value)
+        return cls(cls.ID_APP_EUI, value)

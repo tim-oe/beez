@@ -6,3 +6,6 @@ source =
 omit =
     */lib/*
     */__init__.py
+
+[html]
+directory = ./report/coverage

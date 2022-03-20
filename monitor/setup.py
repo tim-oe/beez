@@ -18,8 +18,9 @@ class CleanCommand(Command):
 
     def run(self):
         os.system("py3clean -v .")
-        os.system("rm -vrf ./.coverage")
+        os.system("rm -vrf ./report")
         os.system("rm -vrf ./*.egg-info")
+        os.system("rm -vrf ./.coverage")
 
 
 class CoverageCommand(Command):
@@ -40,6 +41,7 @@ class CoverageCommand(Command):
 
     def run(self):
         os.system("coverage run setup.py test")
+        os.system("coverage html")
         os.system("coverage report")
 
 
