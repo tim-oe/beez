@@ -18,6 +18,7 @@ class Join(BaseCommand):
 
     COMMAND_JOIN = "JOIN"
     JOIN_FORCE = "FORCE"
+    JOIN_NORMAL = "NORMAL"
 
     def __init__(self, force=False):
         """
@@ -27,5 +28,5 @@ class Join(BaseCommand):
         """
         super().__init__(
             self.COMMAND_JOIN
-            + (BaseCommand.COMMAND_EQUALS + self.JOIN_FORCE, "")[force]
+            + ("", BaseCommand.COMMAND_EQUALS + self.JOIN_FORCE)[force]
         )

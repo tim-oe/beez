@@ -31,7 +31,7 @@ class Key(BaseCommand):
         super().__init__(
             self.COMMAND_KEY
             + BaseCommand.COMMAND_EQUALS
-            + id
+            + key
             + BaseCommand.COMMAND_COMMA
             + BaseCommand.COMMAND_QUOTE
             + value

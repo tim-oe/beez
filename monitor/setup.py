@@ -21,6 +21,7 @@ class CleanCommand(Command):
         os.system("rm -vrf ./.coverage")
         os.system("rm -vrf ./*.egg-info")
 
+
 class CoverageCommand(Command):
     """
     coverage command
@@ -55,8 +56,5 @@ setup(
     packages=find_packages(),
     install_requires=[],
     test_suite="tests",
-    cmdclass={
-        "clean": CleanCommand,
-        "cover": CoverageCommand
-    },
+    cmdclass={"clean": CleanCommand, "cover": CoverageCommand},
 )
