@@ -1,0 +1,11 @@
+# coverage config
+# https://coverage.readthedocs.io/en/6.3.2/config.html
+[run]
+source =
+    ./src
+omit =
+    */lib/*
+    */__init__.py
+
+[html]
+directory = ./report/coverage
