@@ -46,3 +46,14 @@
 <p align="center">
   <img src="imgs/bee-chalet.jpg" width="350" alt="Bee Chalet">
 </p>
+
+# summer 2022
+- both existing hives survived the winter
+- hive 1 swarmed 1 time
+- hive 2 swarmed 3 times
+- trapped 2 wild swarms to establish nucs
+- [requeened](https://www.brawes-bee-farm.com/p/queen/) hive 2
+
+<p align="center">
+  <img src="imgs/bee-cabana.jpg" width="350" alt="Bee cabana">
+</p>
