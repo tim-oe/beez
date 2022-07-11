@@ -12,6 +12,11 @@
 - [1 x 2 poplar](https://www.menards.com/main/building-materials/lumber-boards/boards/mastercraft-reg-1-x-2-poplar-board/1049326/p-1444422758808-c-13115.htm)
 - <img src="imgs/hardware.jpg" width="350" alt="screen mounting hardware">
 
+## screen and opening. cutout on existing seam
+<p align="center">
+  <img src="imgs/screen-underside.jpg" width="350" alt="screen mounted underside">
+</p>
+
 ## ergomonics
 <p align="center">
   <img src="imgs/brace.jpg" width="350" alt="brace for holding frames while decapping">

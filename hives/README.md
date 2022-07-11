@@ -55,5 +55,5 @@
 - [requeened](https://www.brawes-bee-farm.com/p/queen/) hive 2
 
 <p align="center">
-  <img src="imgs/bee-cabana.jpg" width="350" alt="Bee cabana">
+  <img src="imgs/bee-cabana.jpg" width="700" alt="Bee cabana">
 </p>
