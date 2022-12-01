@@ -44,6 +44,28 @@ class CoverageCommand(Command):
         os.system("coverage html")
         os.system("coverage report")
 
+# runs sonar static analizer
+# https://docs.sonarcloud.io/advanced-setup/ci-based-analysis/sonarscanner-cli/
+# p3 setup.py sonar
+class SonarCommand(Command):
+    """SonarQube scanner command"""
+
+    user_options = []
+
+    def initialize_options(self):
+        pass
+
+    def finalize_options(self):
+        pass
+
+    def run(self):
+        os.system("sonar-scanner -X " + 
+                  "-Dsonar.projectKey=beez " + 
+                  "-Dsonar.python.version=3 " +
+                  "-Dsonar.sources=src " +
+                  "-Dsonar.exclusions=src/lib/**/* " +
+                  "-Dsonar.host.url=http://sonarqube " + 
+                  "-Dsonar.login=sqp_71c96d128c55d2c7ecb534b89a9cfa35fe67a130")
 
 # https://www.tutorialguruji.com/python/python-package-structure-setup-py-for-running-unit-tests/
 # run tests
@@ -58,5 +80,5 @@ setup(
     packages=find_packages(),
     install_requires=[],
     test_suite="tests",
-    cmdclass={"clean": CleanCommand, "cover": CoverageCommand},
+    cmdclass={"clean": CleanCommand, "cover": CoverageCommand, "sonar": SonarCommand},
 )

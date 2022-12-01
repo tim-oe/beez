@@ -27,7 +27,7 @@ class Modem(object):
     # LF needed to terminate command
     COMMAND_TERM = "\n"
 
-    def __init__(self, port="/dev/serial0", baud=9600, writeTimeout=60, readDelay=0.3):
+    def __init__(self, port="/dev/serial0", baud=9600, write_timeout=60, read_delay=0.3):
         """
         ctor
         :param self: this
@@ -36,17 +36,17 @@ class Modem(object):
         :param writeTimeout: the write timeout in seconds
         :param readDelay: the delay to wait afte command
         """
-        self.serialPort = serial.Serial(
-            port=port, baudrate=baud, timeout=5, write_timeout=writeTimeout
+        self.serial_port = serial.Serial(
+            port=port, baudrate=baud, timeout=5, write_timeout=write_timeout
         )
-        self.sio = io.TextIOWrapper(io.BufferedRWPair(self.serialPort, self.serialPort))
-        self.readDelay = readDelay
+        self.sio = io.TextIOWrapper(io.BufferedRWPair(self.serial_port, self.serial_port))
+        self.read_delay = read_delay
 
     def close(self):
         """
         close resources
         """
-        self.serialPort.close()
+        self.serial_port.close()
 
     def send(self, command: BaseCommand) -> str:
         """
@@ -57,12 +57,12 @@ class Modem(object):
 
         self.sio.write(command.cmd + self.COMMAND_TERM)
         self.sio.flush()
-        self.serialPort.flush()
-        time.sleep(self.readDelay)
+        self.serial_port.flush()
+        time.sleep(self.read_delay)
 
         out: str = ""
 
-        while self.serialPort.inWaiting() > 0:
-            out += self.serialPort.read(1).decode()
+        while self.serial_port.inWaiting() > 0:
+            out += self.serial_port.read(1).decode()
 
         return out

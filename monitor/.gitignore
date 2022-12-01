@@ -1,5 +1,6 @@
 report/
 .coverage
+.scannerwork
 __pycache__/
 # obsolete pyton package
 *.egg-info/

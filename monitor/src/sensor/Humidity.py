@@ -19,13 +19,13 @@ class Humidity(Temprature):
     see https://shop.switchdoc.com/collections/grove/products/sht30-i2c-waterproof-temperature-and-humidity-sensor-with-grove
     """
 
-    def __init__(self, gpioPin=6):
+    def __init__(self, gpio_pin=6):
         """
         ctor
         :param self: this
         :param gpioPin: the gpio pin (ic2)
         """
-        super().__init__(gpioPin)
+        super().__init__(gpio_pin)
 
     def read(self):
         """
