@@ -17,6 +17,7 @@ class Humidity(Temprature):
     """
     humidity sensor class
     see https://shop.switchdoc.com/collections/grove/products/sht30-i2c-waterproof-temperature-and-humidity-sensor-with-grove
+    see https://github.com/switchdoclabs/SDL_Pi_SHT30
     """
 
     def __init__(self, gpio_pin=6):

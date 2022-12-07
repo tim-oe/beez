@@ -1,4 +1,10 @@
 #!/usr/bin/env python
+# setup script
+# https://docs.python.org/3/distutils/setupscript.html
+# https://godatadriven.com/blog/a-practical-guide-to-using-setup-py/
+# https://coderwall.com/p/3q_czg/custom-subcommand-at-setup-py
+# TODO https://godatadriven.com/blog/a-practical-guide-to-setuptools-and-pyproject-toml/
+
 import os
 from setuptools import setup, find_packages, Command
 
