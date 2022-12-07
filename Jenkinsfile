@@ -5,9 +5,8 @@ pipeline {
             steps {
                 sh 'echo "running tests"'
                 dir("monitor") {
-                    sh "pwd"
+                    sh 'python3 setup.py cover'
                 }
-                sh 'python3 setup.py cover'
             }
         }
     }
