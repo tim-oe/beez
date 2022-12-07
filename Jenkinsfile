@@ -4,7 +4,9 @@ pipeline {
         stage('Test') {
             steps {
                 sh 'echo "running tests"'
-                sh "pwd" dir('monitor')
+                dir("monitor") {
+                    sh "pwd"
+                }
                 sh 'python3 setup.py cover'
             }
         }
