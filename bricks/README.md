@@ -19,3 +19,5 @@ the following recipe
 4. let dry (couple of options)
     - bake at 200 for 1hr
     - let air dry
+
+![feeding](imgs/feeding.jpg?raw=true)    
