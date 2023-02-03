@@ -31,3 +31,4 @@ for remote montoring.
     - [added known_host to docker data](https://stackoverflow.com/questions/44441935/cant-connect-to-jenkins-slave-no-known-hosts-file-was-found-at-var-jenkins-hom)
     - gen ssh key via [putty](https://www.ssh.com/academy/ssh/putty/windows/puttygen)
     - for jenkins ssh key creds need to export private key as [openssh format](https://stackoverflow.com/questions/53636532/jenkins-what-is-the-correct-format-for-private-key-in-credentials) 
+    - add jenkins to needed [groups](https://forums.raspberrypi.com/viewtopic.php?t=225274)
