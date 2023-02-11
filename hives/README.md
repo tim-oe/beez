@@ -52,8 +52,22 @@
 - hive 1 swarmed 1 time
 - hive 2 swarmed 3 times
 - trapped 2 wild swarms to establish nucs
+  - got a case of EFB for my troubles...
 - [requeened](https://www.brawes-bee-farm.com/p/queen/) hive 2
 
 <p align="center">
   <img src="imgs/bee-cabana.jpg" width="700" alt="Bee cabana">
+</p># summer 2022
+
+# winter 22 - 23
+- combined nucs on single stand
+  - made wrap out of 10 mill plastic r30 insulation
+  - corplast snow sheild 
+- bee chalets in place   
+
+<p align="center">
+  <img src="imgs/winter-22-23.jpg" width="700" alt="winter 22-23">
 </p>
+
+
+
