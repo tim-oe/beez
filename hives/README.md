@@ -57,7 +57,7 @@
 
 <p align="center">
   <img src="imgs/bee-cabana.jpg" width="700" alt="Bee cabana">
-</p># summer 2022
+</p>
 
 # winter 22 - 23
 - combined nucs on single stand
