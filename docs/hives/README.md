@@ -84,5 +84,15 @@ progression of hives
   <img src="imgs/winter-22-23.jpg" width="700" alt="winter 22-23">
 </p>
 
-
-
+## Spring 2023
+- lost hive 2
+  - no queen signs of EFB
+  - culled hive
+- both nucs survided winter
+  - reconstituted hive 2 with nuc 1
+  - nuc 2 to seed single boord hive project
+- hive 1 doing ok but might replace queens end of summer
+- 1 and 2 have anti hive beatle entrances
+<p align="center">
+  <img src="imgs/spring-2023.jpg" width="700" alt="spring 2023">
+</p>
