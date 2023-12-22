@@ -6,7 +6,8 @@ the following recipe
 - [Silicone Bread and Loaf Pans](https://www.amazon.com/gp/product/B07PJG9WZY)
 - sugar 2500 grams
 - apple cidar vinager 1/2 cup
-- [honeybee healthy](https://www.honeybhealthy.com/products/) 1 tbl spoon
+- [honeybee healthy](https://www.honeybhealthy.com/products/) 1 tps spoon (might even go with 1/2)
+- on batch I replaced 100g of sugar with pollen substitute bit not sure if beneficial
 ![ingredients and equiptment](imgs/ingredients.jpg?raw=true)
 
 ## directions
