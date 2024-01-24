@@ -28,7 +28,6 @@ class CleanCommand(Command):
         os.system("rm -vrf ./*.egg-info")
         os.system("rm -vrf ./.coverage")
 
-
 class CoverageCommand(Command):
     """
     coverage command

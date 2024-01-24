@@ -18,3 +18,11 @@ random stuff
 <p align="center">
   <img src="imgs/robbing-screen-back.jpg" width="700" alt="robbing screen back">
 </p>
+
+## [Russian Scion](https://stclairbees.com/wp-content/uploads/2022/04/Russian-Scion.pdf)
+<p align="center">
+  <img src="imgs/russian_scion1.jpg" width="700" alt="russian scion setup">
+</p>
+<p align="center">
+  <img src="imgs/russian_scion2.jpg" width="700" alt="russian scion deployed">
+</p>
